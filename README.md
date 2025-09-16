@@ -15,12 +15,16 @@ scholar URL, and run `collect_publications.py` with Python:
 You should see something like that:
 
 ```bash
-    User ID = 9fD2JlYAAAAJ
-    User name = Gravelle Simon
-    2013 Optimizing water permeability through the hourglass shape of aquaporins Proceedings of the National Academy of Sciences
-    2014 Large permeabilities of hourglass nanopores: From hydrodynamics to single file transport The Journal of chemical physics
-    2013 Nanofluidic osmotic diodes: Theory and molecular dynamics simulations Physical review letters
-    2014 Sub-additive ionic transport across arrays of solid-state nanopores Physics of Fluids
+    User ID = Xix_ZHoAAAAJ
+    User name = SungKu Heo
+
+
+    2019 An insight into nanocellulo... Unknown Journal
+    2019 A deep reinforcement learni... Energy and Buildings
+    2020 Soft sensor validation for ... Control Engineering Practice
+    2019 Hydrogen-based self-sustain... Energy Conversion and Management
+    2021 Data-Driven Hybrid Model fo... IEEE Transactions on Industrial Informatics
+    2021 A hybrid machine learning–b... Journal of Cleaner Production
     (...)
 ```
 
@@ -35,18 +39,18 @@ adapt to your content.
 Output looks like that:
 ```bash
 ---
-title: "Optimizing water permeability through the hourglass shape of aquaporins"
-date: 2013-09-25
-publishDate: 2013-09-25
-authors: ["**Simon Gravelle**", "Laurent Joly", "François Detcheverry", "Christophe Ybert", "Cécile Cottin-Bizonne", "Lydéric Bocquet"]
+title: "XRL-FlexSBR: Multi-agent reinforcement learning-driven flexible SBR control with explainable performance guarantee under diverse influent conditions"
+date: 2024-01-01
+publishDate: 2024-01-01
+authors: ["SungKu Heo", "KiJeon Nam", "SangYoun Kim", "ChangKyoo Yoo"]
 publication_types: ["2"]
-abstract: "Aquaporin channels are able to selectively conduct water across cell membranes, with remarkable efficiency. Although molecular details are crucial to the pore performance, permeability is also strongly limited by viscous dissipation at the entrances. Could the hourglass shape of aquaporins optimize such entrance effects? We show that conical entrances with suitable opening angle can indeed provide a large increase of the channel permeability. Strikingly, the optimal opening angles compare well with the angles measured in a large variety of aquaporins, suggesting that their hourglass shape could be the result of a natural selection process toward optimal permeability. This work also provides guidelines to optimize the performances of artificial nanopores, with applications in desalination, ultrafiltration, or energy conversion."
+abstract: "The sequencing batch reactor (SBR) process stands out for its small footprint and operational flexibility. However, the SBR process is highly nonlinear and subject to influent disturbances. In this study, we suggested an explainable multi-agent reinforcement learning (XRL) approach coupled with multi-agent reinforcement learning (MARL) and explainable AI (XAI); then, an XRL-driven flexible SBR control (XRL-FlexSBR) system was developed to conduct multivariate control the SBR process autonomously. Influent big datasets including biochemical oxygen demand (BOD) and total nitrogen (TN) were collected from the wastewater treatment plants (WWTPs) of South Korea. Then, the Gaussian mixture model was utilized to cluster the diverse influent conditions and the SBR mechanistic model was developed. A game abstraction method based on a two-stage attention network (G2ANET), one of MARL algorithms, was …"
 featured: true
-publication: "Proceedings of the National Academy of Sciences, 110, 41"
+publication: "Journal of Water Process Engineering 2024 66 "
 links:
   - icon_pack: fas
     icon: scroll
     name: Link
-    url: 'https://doi.org/10.1073/pnas.1306447110'
+    url: 'https://www.sciencedirect.com/science/article/pii/S2214714424012236'
 ---
 ```
