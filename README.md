@@ -1,4 +1,4 @@
-# Google Scholar entry collector
+# Google Scholar Entry Collector
 
 A Python script that collect publication information from a given google scholar
 profile. It uses the [Python scholarly library](https://pypi.org/project/scholarly/).
