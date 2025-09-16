@@ -126,7 +126,13 @@ def fetch_publications(profile_url, verbose = True):
             print("\n")
 
         # Sort the publications
-        publications.sort(key=lambda x: x.get('year', 0), reverse=False)
+        def year_key(x):
+            try:
+                return int(x.get('year', 0))
+            except (ValueError, TypeError):
+                return 0
+            
+        publications.sort(key=year_key, reverse=False)
 
         return publications
 
@@ -235,13 +241,15 @@ def save_to_file(pub, path, folder, verbose):
         if 'N/A' not in issue:
             publication_entry += f"({issue})"
 
+    safe_abstract = abstract.replace('\n', ' ').replace('"', "'")
+
     content = f"""---
 title: "{title}"
 date: {date}
 publishDate: {date}
 authors: {"["+authors_str+"]"}
 publication_types: ["{publication_type}"]
-abstract: "{abstract.replace('\n', ' ').replace('\"', '\'')}"
+abstract: "{safe_abstract}"
 featured: true
 publication: "{publication_entry}"
 links:
